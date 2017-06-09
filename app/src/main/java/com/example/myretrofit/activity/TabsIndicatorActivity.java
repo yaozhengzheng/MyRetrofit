@@ -17,6 +17,9 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
+/**
+ * @author 姚政诤
+ */
 public class TabsIndicatorActivity extends AppCompatActivity {
 
     @Bind(R.id.mViewPager)

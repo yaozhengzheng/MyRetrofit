@@ -9,6 +9,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * @author 姚政诤
+ */
 public class TextFragment extends Fragment {
     public static final String BUNDLE_TITLE = "title";
     private String mTitle = "DefaultValue";
