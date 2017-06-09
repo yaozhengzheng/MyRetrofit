@@ -45,6 +45,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("Video");
         list.add("SpringActionMenu");
         list.add("ChooseCity");
+        list.add("TabsIndicator");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -58,6 +59,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 2:
                         intent.setClass(HomeActivity.this, ChooseCityActivity.class);
+                        break;
+                    case 3:
+                        intent.setClass(HomeActivity.this, TabsIndicatorActivity.class);
                         break;
                 }
                 startActivity(intent);
