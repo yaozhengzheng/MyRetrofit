@@ -18,7 +18,8 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * @author 姚政诤
+ * @author yao
+ *         time 2017-06-12
  */
 public class TabsIndicatorActivity extends AppCompatActivity {
 
