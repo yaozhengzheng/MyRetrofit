@@ -21,7 +21,7 @@ public class ActionMenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_action_menu);
         ButterKnife.bind(this);
-
+        System.out.println("****************"+'I' + 'T');
         // add menu items
         actionMenu.addView(R.drawable.search, getItemColor(R.color.menuNormalInfo), getItemColor(R.color.menuPressInfo));
         actionMenu.addView(R.drawable.like, getItemColor(R.color.menuNormalRed), getItemColor(R.color.menuPressRed));
