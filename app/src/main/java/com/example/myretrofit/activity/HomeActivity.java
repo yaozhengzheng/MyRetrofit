@@ -97,10 +97,12 @@ public class HomeActivity extends AppCompatActivity {
 
 
     private void initData() {
+
         list.add("Video");
         list.add("SpringActionMenu");
         list.add("ChooseCity");
         list.add("TabsIndicator");
+        list.add("okgo请求有问题");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -118,6 +120,8 @@ public class HomeActivity extends AppCompatActivity {
                     case 3:
                         intent.setClass(HomeActivity.this, TabsIndicatorActivity.class);
                         break;
+                    case 4:
+                        intent.setClass(HomeActivity.this, PracticeActivity.class);
                 }
                 startActivity(intent);
             }
