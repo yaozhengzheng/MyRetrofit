@@ -86,7 +86,7 @@ public class NewsTabFragment extends Fragment implements SwipeRefreshLayout.OnRe
 
         //开启loading,获取数据
         setRefreshing(true);
-        onRefresh();
+//        onRefresh();
     }
 
     @Override

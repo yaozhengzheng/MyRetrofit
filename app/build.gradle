@@ -11,6 +11,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    //解决冲突
+    //Error:Conflict with dependency 'com.google.code.findbugs:jsr305' in project ':app'. Resolved versions for app (3.0.1) and test app (2.0.1) differ. See http://g.co/androidstudio/app-test-app-conflict for details.
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:2.0.1'
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -27,6 +32,9 @@ dependencies {
     // retrofit, gson
     // glide
     compile project(':nicevideoplayer')
+    //    compile 'com.lzy.net:okrx:+'
+    
+
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:recyclerview-v7:25.3.1'
@@ -40,18 +48,19 @@ dependencies {
     compile 'com.github.lilei644:SpringActionMenu:1.0.0'
     compile 'com.zaaach:citypicker:1.1'
     compile 'com.yinglan.alphatabs:library:1.0.8'
-    testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:25.3.1'
     compile 'com.lzy.net:okgo:+'
-//    compile 'com.lzy.net:okrx:+'
     compile 'com.lzy.net:okrx2:+'
     compile 'com.lzy.net:okserver:+'
     compile 'com.lzy.widget:ninegridview:0.2.1'
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:v2.0.7'
     compile 'com.readystatesoftware.chuck:library:1.0.4'
     compile 'com.lzy.widget:imagepicker:0.3.2'
-
+    compile 'com.sunfusheng:glideimageview:1.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:percent:25.3.1'
 }
+
 
 
 

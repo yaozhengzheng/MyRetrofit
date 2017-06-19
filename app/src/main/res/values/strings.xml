@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MyRetrofit</string>
     <string name="translate_up_down_behavior">com.lzy.demo.ui.TranslateUpDownBehavior</string>
+    <string name="transitional_image">the image of transition</string>
 </resources>

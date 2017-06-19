@@ -45,6 +45,9 @@
         <activity
             android:name=".activity.PracticeActivity"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.ImageViewActivity"/>
+        <activity android:name=".activity.ImageActivity"/>
+
     </application>
 
 </manifest>
