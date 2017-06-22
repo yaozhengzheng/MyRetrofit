@@ -104,6 +104,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("TabsIndicator");
         list.add("okgo请求有问题");
         list.add("image");
+        list.add("Diy_view");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -126,6 +127,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 5:
                         intent.setClass(HomeActivity.this, ImageViewActivity.class);
+                        break;
+                    case 6:
+                        intent.setClass(HomeActivity.this, DiyActivity.class);
                         break;
                 }
                 startActivity(intent);
