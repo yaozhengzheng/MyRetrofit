@@ -106,6 +106,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("image");
         list.add("Diy_view");
         list.add("Custom");
+        list.add("Splash");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -134,6 +135,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 7:
                         intent.setClass(HomeActivity.this, CustomActivity.class);
+                        break;
+                    case 8:
+                        intent.setClass(HomeActivity.this, SplashActivity.class);
                         break;
                 }
                 startActivity(intent);
