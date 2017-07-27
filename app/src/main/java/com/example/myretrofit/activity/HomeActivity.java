@@ -98,7 +98,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private void initData() {
 
-        list.add("Video");
+        list.add("Video传入地址有问题");
         list.add("SpringActionMenu");
         list.add("ChooseCity");
         list.add("TabsIndicator");
@@ -107,6 +107,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("Diy_view");
         list.add("Custom");
         list.add("Splash");
+        list.add("WCDB数据库");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -138,6 +139,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 8:
                         intent.setClass(HomeActivity.this, SplashActivity.class);
+                        break;
+                    case 9:
+                        intent.setClass(HomeActivity.this, WcdbActivity.class);
                         break;
                 }
                 startActivity(intent);

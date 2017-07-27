@@ -47,14 +47,12 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".activity.ImageViewActivity"/>
         <activity android:name=".activity.ImageActivity"/>
-        <activity android:name=".activity.DiyActivity">
-        </activity>
+        <activity android:name=".activity.DiyActivity"/>
         <activity
             android:name=".activity.CustomActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".activity.SplashActivity">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.SplashActivity"/>
+        <activity android:name=".activity.WcdbActivity"/>
     </application>
 
 </manifest>
