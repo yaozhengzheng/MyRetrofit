@@ -108,6 +108,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("Custom");
         list.add("Splash");
         list.add("WCDB数据库");
+        list.add("收益曲线图");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -142,6 +143,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 9:
                         intent.setClass(HomeActivity.this, WcdbActivity.class);
+                        break;
+                    case 10:
+                        intent.setClass(HomeActivity.this, ChartActivity.class);
                         break;
                 }
                 startActivity(intent);

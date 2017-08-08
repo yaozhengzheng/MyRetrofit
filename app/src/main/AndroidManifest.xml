@@ -53,6 +53,7 @@
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".activity.SplashActivity"/>
         <activity android:name=".activity.WcdbActivity"/>
+        <activity android:name=".activity.ChartActivity"/>
     </application>
 
 </manifest>
