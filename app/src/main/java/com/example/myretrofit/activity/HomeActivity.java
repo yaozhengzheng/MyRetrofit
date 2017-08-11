@@ -109,6 +109,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("Splash");
         list.add("WCDB数据库");
         list.add("收益曲线图");
+        list.add("闪屏广告图");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -146,6 +147,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 10:
                         intent.setClass(HomeActivity.this, ChartActivity.class);
+                        break;
+                    case 11:
+                        intent.setClass(HomeActivity.this, SplashAdvertisingActivity.class);
                         break;
                 }
                 startActivity(intent);
