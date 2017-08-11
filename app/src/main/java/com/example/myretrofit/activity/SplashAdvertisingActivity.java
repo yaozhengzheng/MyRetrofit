@@ -13,11 +13,14 @@ import butterknife.OnClick;
 
 /**
  * @author 姚政诤
- * 广告显示页面
+ *         广告显示页面
  */
 public class SplashAdvertisingActivity extends AppCompatActivity {
 
     SplashDialog splashDialog;
+
+    //图片地址
+    private String url = "http://img0.ph.126.net/Ol1MdFsK-wBADSwY-pSnuQ==/3166593487997081622.jpg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,7 @@ public class SplashAdvertisingActivity extends AppCompatActivity {
 
     @OnClick(R.id.btn_show)
     public void onViewClicked() {
-        AdvertisingImgModel advertisingImgModel = new AdvertisingImgModel(1, "http://bmob-cdn-10899.b0.upaiyun.com/2017/05/09/34b6d85c406894f3803d949a78c4546e.jpg");
+        AdvertisingImgModel advertisingImgModel = new AdvertisingImgModel(1, url);
         splashDialog = new SplashDialog(SplashAdvertisingActivity.this, advertisingImgModel);
         splashDialog.setOnSplashDetailClickListener(new SplashDialog.OnSplashDetailClickListener() {
             @Override
