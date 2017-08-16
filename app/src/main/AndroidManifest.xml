@@ -13,7 +13,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.NoActionBar">
         <meta-data
             android:name="com.amap.api.v2.apikey"
             android:value="your key"/>
@@ -54,8 +54,11 @@
         <activity android:name=".activity.SplashActivity"/>
         <activity android:name=".activity.WcdbActivity"/>
         <activity android:name=".activity.ChartActivity"/>
-        <activity android:name=".activity.SplashAdvertisingActivity">
-        </activity>
+        <activity android:name=".activity.SplashAdvertisingActivity"/>
+        <activity
+            android:name=".activity.BarActivity"
+            android:label="伸缩状态栏"
+           />
     </application>
 
 </manifest>

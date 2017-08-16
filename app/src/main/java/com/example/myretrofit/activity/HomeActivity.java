@@ -102,7 +102,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("SpringActionMenu");
         list.add("ChooseCity");
         list.add("TabsIndicator");
-        list.add("okgo请求有问题");
+        list.add("okgo");
         list.add("image");
         list.add("Diy_view");
         list.add("Custom");
@@ -110,6 +110,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("WCDB数据库");
         list.add("收益曲线图");
         list.add("闪屏广告图");
+        list.add("伸缩式标题栏");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -150,6 +151,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 11:
                         intent.setClass(HomeActivity.this, SplashAdvertisingActivity.class);
+                        break;
+                    case 12:
+                        intent.setClass(HomeActivity.this, BarActivity.class);
                         break;
                 }
                 startActivity(intent);
