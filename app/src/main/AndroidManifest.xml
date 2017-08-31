@@ -58,7 +58,8 @@
         <activity
             android:name=".activity.BarActivity"
             android:label="伸缩状态栏"/>
-        <activity android:name=".activity.SearchBarActivity"/>
+        <activity
+            android:name=".activity.SearchBarActivity"/>
     </application>
 
 </manifest>

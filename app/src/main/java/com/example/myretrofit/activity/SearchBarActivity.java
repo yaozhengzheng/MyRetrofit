@@ -50,7 +50,6 @@ public class SearchBarActivity extends AppCompatActivity implements AppBarLayout
         recyclerView.setAdapter(new MyAdapter());
     }
 
-
     @OnClick(R.id.search_bar)
     public void onViewClicked() {
         Toast.makeText(this, "搜索！", Toast.LENGTH_SHORT).show();
