@@ -34,8 +34,13 @@ public class SearchBarActivity extends AppCompatActivity implements AppBarLayout
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_bar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
         ButterKnife.bind(this);
         initView();
+
     }
 
     private void initView() {
