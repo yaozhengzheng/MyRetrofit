@@ -9,7 +9,8 @@
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="true"
+        app:theme="@style/toolbar_theme">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
@@ -31,16 +32,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            </android.support.v7.widget.Toolbar>
 
             <com.example.myretrofit.view.SearchBarView
                 android:id="@+id/search_bar"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="65dp"
-                android:layout_marginRight="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_margin="8dp"
                 app:layout_collapseMode="pin"
                 app:search_bar_hint_text="请输入搜索内容"/>
 

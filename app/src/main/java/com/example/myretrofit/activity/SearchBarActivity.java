@@ -35,9 +35,6 @@ public class SearchBarActivity extends AppCompatActivity implements AppBarLayout
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_bar);
         setSupportActionBar(toolbar);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
         ButterKnife.bind(this);
         initView();
 
@@ -46,7 +43,9 @@ public class SearchBarActivity extends AppCompatActivity implements AppBarLayout
     private void initView() {
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            actionBar.hide();
+//            actionBar.hide();
+            actionBar.setDisplayHomeAsUpEnabled(true);
+            actionBar.setDisplayShowTitleEnabled(false);
         }
         appBar.addOnOffsetChangedListener(this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

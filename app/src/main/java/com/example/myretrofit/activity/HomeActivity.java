@@ -112,6 +112,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("闪屏广告图");
         list.add("伸缩式标题栏");
         list.add("伸缩搜索框");
+        list.add("应用宝下载");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -158,6 +159,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 13:
                         intent.setClass(HomeActivity.this, SearchBarActivity.class);
+                        break;
+                    case 14:
+                        intent.setClass(HomeActivity.this, DownloadActivity.class);
                         break;
                 }
                 startActivity(intent);

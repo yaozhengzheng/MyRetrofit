@@ -29,7 +29,6 @@ public class BarActivity extends BaseActivity {
             "http://7xp1a1.com1.z0.glb.clouddn.com/liyu04.png",
             "http://7xp1a1.com1.z0.glb.clouddn.com/liyu05.png"};
 
-//    private Subscription subscription;
 
     @Override
     protected int getLayoutId() {
