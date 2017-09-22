@@ -61,6 +61,8 @@
         <activity android:name=".activity.SearchBarActivity"/>
         <activity android:name=".activity.DownloadActivity">
         </activity>
+        <activity android:name=".activity.LayoutActivity">
+        </activity>
     </application>
 
 </manifest>
