@@ -63,6 +63,8 @@
         </activity>
         <activity android:name=".activity.LayoutActivity">
         </activity>
+        <activity android:name=".activity.PermissionActivity">
+        </activity>
     </application>
 
 </manifest>

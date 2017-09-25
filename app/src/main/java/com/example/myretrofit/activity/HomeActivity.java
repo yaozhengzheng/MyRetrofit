@@ -114,6 +114,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("伸缩搜索框");
         list.add("应用宝下载");
         list.add("满减布局");
+        list.add("权限申请页面");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -167,6 +168,10 @@ public class HomeActivity extends AppCompatActivity {
                     case 15:
                         intent.setClass(HomeActivity.this, LayoutActivity.class);
                         break;
+                    case 16:
+                        intent.setClass(HomeActivity.this, PermissionActivity.class);
+                        break;
+
                 }
                 startActivity(intent);
             }
