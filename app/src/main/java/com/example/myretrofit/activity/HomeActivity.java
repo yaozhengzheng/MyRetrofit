@@ -115,6 +115,7 @@ public class HomeActivity extends AppCompatActivity {
         list.add("应用宝下载");
         list.add("满减布局");
         list.add("权限申请页面");
+        list.add("超级简便的申请权限");
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -170,6 +171,9 @@ public class HomeActivity extends AppCompatActivity {
                         break;
                     case 16:
                         intent.setClass(HomeActivity.this, PermissionActivity.class);
+                        break;
+                    case 17:
+                        intent.setClass(HomeActivity.this, EasyPermissionActivity.class);
                         break;
 
                 }
